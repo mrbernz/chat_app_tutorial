@@ -164,7 +164,20 @@ $(window).resize(function(){
   }
 });
 
-
+$('.nav').click(function(){
+  // console.log(clicked);
+  if(!clicked){
+    $('#navbar').animate({left:"0px"});
+    $('#clicker').animate({left:"150px"});
+    // $('#content').animate({left:"0px"});
+    clicked = true;
+  }else{
+    $('#navbar').animate({left: "-175px"});
+    $('#clicker').animate({left:"0px"});
+    // $('#content').animate({left:"175px"});
+    clicked = false;
+  }
+});
 
 $('#clicker').click(function(){
   // console.log(clicked);
