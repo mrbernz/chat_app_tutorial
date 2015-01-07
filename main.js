@@ -134,15 +134,18 @@ if( $(window).scrollTop() >= $("#c_server").offset().top -10 &&
 }
 
 var clicked = false;
+var small;
 if( $(window).width() < 750){
     $('#navbar').css({left: "-175px"});
     $('#content').css({"margin-left":"0px"});
     $('#clicker').css({display:"block"});
+    small = true;
   }else{
     // if(!clicked)
     $('#navbar').css({left:"0px"});
     $('#content').css({"margin-left":"170px"});
     $('#clicker').css({display:"none"});
+    small = false;
   }
 
 $(window).resize(function(){
@@ -156,26 +159,31 @@ $(window).resize(function(){
       $('#clicker').css({left:"0px"});
       // clicked = false;
     }
+    small = true;
   }else{
     $('#navbar').css({left:"0px"});
     $('#content').css({"margin-left":"170px"});
     $('#clicker').css({display:"none"});
     clicked = false;
+    small = false;
   }
 });
 
 $('.nav').click(function(){
   // console.log(clicked);
-  if(!clicked){
-    $('#navbar').animate({left:"0px"});
-    $('#clicker').animate({left:"150px"});
-    // $('#content').animate({left:"0px"});
-    clicked = true;
-  }else{
-    $('#navbar').animate({left: "-175px"});
-    $('#clicker').animate({left:"0px"});
-    // $('#content').animate({left:"175px"});
-    clicked = false;
+  if(small){  
+    if(!clicked){
+      $('#navbar').animate({left:"0px"});
+      $('#clicker').animate({left:"150px"});
+      // $('#content').animate({left:"0px"});
+      clicked = true;
+    }
+    else{
+      $('#navbar').animate({left: "-175px"});
+      $('#clicker').animate({left:"0px"});
+      // $('#content').animate({left:"175px"});
+      clicked = false;
+    }
   }
 });
 
