@@ -159,10 +159,10 @@ p {
 	border: 0;
 }
 
-#intro:hover {
+/*#intro:hover {
 	border-bottom: 1px solid #FFF;
 }
-
+*/
 h3 {
 	padding-left: 20px;
 }
@@ -174,4 +174,81 @@ h3 {
 
 #navbar a:hover {
 	color: gray;
+}
+
+/* General styles for all menus */
+ 
+#navbar {
+    background: #47a3da;
+    position: fixed;
+}
+ 
+#navbar h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: #0d77b6;
+}
+ 
+#navbar ul, #navbar a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+ 
+#navbar a:hover {
+    background: #258ecd;
+}
+ 
+#navbar a:active {
+    background: #afdefa;
+    color: #47a3da;
+}
+ 
+/* Orientation-dependent styles for the content of the menu */
+ 
+.cbp-spmenu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+ 
+.cbp-spmenu-vertical a {
+    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+}
+ 
+.cbp-spmenu-horizontal {
+    width: 100%;
+    height: 150px;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+ 
+.cbp-spmenu-horizontal h3 {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+ 
+.cbp-spmenu-horizontal a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd;
+}
+ 
+/* Vertical menu that slides from the left */
+ 
+.cbp-spmenu-left {
+    left: -240px;
+}
+  
+.cbp-spmenu-left.cbp-spmenu-open {
+    left: 0px;
 }

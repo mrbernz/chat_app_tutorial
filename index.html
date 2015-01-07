@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="navbar">
+<!-- 		<div id="navbar">
 			<div class="nav" id="intro">
 			 	<a href="#introPage"><h3>Introduction</h3></a>
 			</div>
@@ -69,9 +69,70 @@
 		       </ul>
 		   </div>
 		</div>
-	
+ -->	
+<!-- body has the class "cbp-spmenu-push" -->
+<div id="navbar">
+	<nav class="navbar cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+	    <h3>Menu</h3>
+	    <a href="#introPage">Introduction</a>
+	    <a href="#conceptPage">Concepts</a>
+	       <ul class="list" id="conc_list">
+		           <a href="#c1"><li class="subList">Node.js</li></a>
+		           <a href="#c2"><li class="subList">Web Sockets</li></a>
+	       </ul>
+	    <a href="#serverPage">Chat Server</a>
+	       <ul  class="list" id="chat_s_list">
+		       <a href="#c_s1"><li class="subList">Introduction</li></a>
+		       <a href="#c_s2"><li class="subList">Required</li></a>
+		       <a href="#c_s3"><li class="subList">Connection</li></a>
+		       <a href="#c_s4"><li class="subList">Receiving Messages</li></a>
+		       <a href="#c_s5"><li class="subList">Sending Messages</li></a>
+		       <a href="#c_s6"><li class="subList">Handling Disconnections</li></a>
+		       <a href="#c_s7"><li class="subList">Conclusion </li></a>
+		   </ul>
+	    <a href="#clientPage">Chat Client</a>
+		    <ul  class="list" id="chat_c_list">
+			           <a href="#c_c1"><li class="subList">Introduction</li></a>
+			           <a href="#c_c2"><li class="subList">Prompt for Name</li></a>
+			           <a href="#c_c3"><li class="subList">Starting Connection</li></a>
+			           <a href="#c_c4"><li class="subList">Receiving Messages</li></a>
+			           <a href="#c_c5"><li class="subList">Sending Messages</li></a>
+			           <a href="#c_c6"><li class="subList">Conclusion</li></a>
+			</ul>
+	    <a href="#github">Git</a>
+			<ul  class="list" id="git_list">
+	           <a href="#git_local"><li class="subList">Creating a Local Repository</li></a>
+	           <a href="#github_repo"><li class="subList">Creating the Github Repo</li></a>
+	           <a href="#git_push"><li class="subList">Adding Files to Github</li></a>
+	           <a href="#git_best"><li class="subList"> Best Practices</li></a>
+	       	</ul>
+	    <a href="#testingPage">Testing</a>
+			<ul class="list" id="test_list">
+		           <a href="#c_t1"><li class="subList"> Running the Server</li></a>
+		           <a href="#c_t2"><li class="subList"> Connecting to the Server </li></a>
+		           <a href="#c_t3"><li class="subList"> Debugging </li></a>
+		    </ul>
+	    <a href="#hostingPage">Hosting</a>
+	       <ul class="list" id="host_list">
+	           <a href="#c_h1"><li class="subList">Introduction</li></a>
+	           <a href="#c_h2"><li class="subList">How to Host</li></a>
+	       </ul>
+</nav>
+</div>
+<!-- <div class="container">
+    <div class="main">
+        <section>
+            <h2>Menu</h2>
+            Class "cbp-spmenu-open" gets applied to menu
+            <button id="showLeft">Show/Hide Left Slide Menu</button>
+        </section>
+    </div>
+</div>
+ -->
+
 		<div id="content">	
-			
+			<h1><button id="showLeft">Show/Hide Left Slide Menu</button></h1>
+
 			<div id="introPage">
 				<h4> Create a Chat App </h4>
 				<h1 id="c_intro">Introduction</h1>
